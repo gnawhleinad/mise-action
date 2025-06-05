@@ -66577,9 +66577,9 @@ async function setEnvVars() {
         set('MISE_LOG_LEVEL', logLevel);
     set('MISE_TRUSTED_CONFIG_PATHS', process.cwd());
     set('MISE_YES', '1');
-    const shimsDir = path.join(miseDir(), 'shims');
-    core.info(`Adding ${shimsDir} to PATH`);
-    core.addPath(shimsDir);
+    // const shimsDir = path.join(miseDir(), 'shims')
+    // core.info(`Adding ${shimsDir} to PATH`)
+    // core.addPath(shimsDir)
 }
 async function restoreMiseCache() {
     core.startGroup('Restoring mise cache');

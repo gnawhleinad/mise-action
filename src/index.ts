@@ -53,9 +53,9 @@ async function setEnvVars(): Promise<void> {
   set('MISE_TRUSTED_CONFIG_PATHS', process.cwd())
   set('MISE_YES', '1')
 
-  const shimsDir = path.join(miseDir(), 'shims')
-  core.info(`Adding ${shimsDir} to PATH`)
-  core.addPath(shimsDir)
+  // const shimsDir = path.join(miseDir(), 'shims')
+  // core.info(`Adding ${shimsDir} to PATH`)
+  // core.addPath(shimsDir)
 }
 
 async function restoreMiseCache(): Promise<string | undefined> {
